@@ -41,7 +41,7 @@
     "@stdlib/ndarray-base-strides2order": "^0.1.1",
     "@stdlib/ndarray-ndims": "github:stdlib-js/ndarray-ndims#main",
     "@stdlib/ndarray-strides": "github:stdlib-js/ndarray-strides#main",
-    "@stdlib/string-format": "^0.1.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.1",
     "@stdlib/types": "^0.1.0"
   },
   "devDependencies": {
