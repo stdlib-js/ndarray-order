@@ -1,4 +1,0 @@
-// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import r from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-order@v0.1.1-esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-strides@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ndims@esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2order@v0.1.1-esm/index.mjs";import d from"https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.1.1-esm/index.mjs";function n(n){var i,m;if("object"!=typeof n||null===n)throw new TypeError(d("invalid argument. Must provide an ndarray. Value: `%s`.",n));return m=n.order,r(m)?m:(i=s(n),1===(m=e(i))||3===m?"row-major":2===m?"column-major":0===t(n)?"row-major":null)}export{n as default};
-//# sourceMappingURL=index.mjs.map
