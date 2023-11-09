@@ -45,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-order
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import order from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-order@esm/index.mjs';
+var order = require( '@stdlib/ndarray-order' );
 ```
 
 #### order( x )
@@ -60,7 +76,7 @@ import order from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-order@esm/index
 Returns the [layout order][@stdlib/ndarray/orders] of a provided [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
+var zeros = require( '@stdlib/ndarray-zeros' );
 
 var x = zeros( [ 3, 2, 3 ], {
     'order': 'row-major'
@@ -93,17 +109,12 @@ var out = order( x );
 
 <!-- eslint-disable new-cap -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
-import slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice@esm/index.mjs';
-import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
-import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import order from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-order@esm/index.mjs';
+```javascript
+var zeros = require( '@stdlib/ndarray-zeros' );
+var slice = require( '@stdlib/ndarray-slice' );
+var E = require( '@stdlib/slice-multi' );
+var S = require( '@stdlib/slice-ctor' );
+var order = require( '@stdlib/ndarray-order' );
 
 // Create an array:
 var x = zeros( [ 10, 10, 10, 10 ] );
@@ -134,10 +145,6 @@ for ( i = 0; i < slices.length; i++ ) {
     s = slice( x, slices[ i ] );
     console.log( '%s => %s', s.order, order( s ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -156,6 +163,16 @@ for ( i = 0; i < slices.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray-array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray-ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray-orders`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
+-   <span class="package-name">[`@stdlib/ndarray-shape`][@stdlib/ndarray/shape]</span><span class="delimiter">: </span><span class="description">return the shape of a provided ndarray.</span>
+-   <span class="package-name">[`@stdlib/ndarray-strides`][@stdlib/ndarray/strides]</span><span class="delimiter">: </span><span class="description">return the strides of a provided ndarray.</span>
+
 </section>
 
 <!-- /.related -->
@@ -169,7 +186,7 @@ for ( i = 0; i < slices.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -229,9 +246,19 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-order/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/orders]: https://github.com/stdlib-js/stdlib/tree/esm
+[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
+
+[@stdlib/ndarray/shape]: https://github.com/stdlib-js/ndarray-shape
+
+[@stdlib/ndarray/strides]: https://github.com/stdlib-js/ndarray-strides
+
+<!-- </related-links> -->
 
 </section>
 
