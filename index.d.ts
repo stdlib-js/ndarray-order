@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,30 +16,35 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray, Order } from '@stdlib/types/ndarray';
 
 /**
-* Return the layout order of a provided ndarray.
+* Returns the layout order of a provided ndarray.
 *
-* @module @stdlib/ndarray-order
+* ## Notes
+*
+* -   If unable to resolve a layout order, the function returns `null`.
+*
+* @param x - input ndarray
+* @returns layout order (or null)
 *
 * @example
-* var zeros = require( '@stdlib/ndarray-zeros' );
-* var order = require( '@stdlib/ndarray-order' );
+* var zeros = require( `@stdlib/ndarray/zeros` );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'order': 'row-major'
 * });
 *
-* var out = order( x );
+* var o = order( x );
 * // returns 'row-major'
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function order( x: ndarray ): Order | null;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = order;
