@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-assert-is-order": "^0.2.2",
-    "@stdlib/ndarray-base-strides2order": "^0.2.1",
+    "@stdlib/ndarray-base-strides2order": "^0.2.2",
     "@stdlib/ndarray-ndims": "^0.2.2",
     "@stdlib/ndarray-strides": "^0.2.2",
     "@stdlib/string-format": "^0.2.2",
@@ -46,11 +46,11 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-typed": "^0.2.1",
+    "@stdlib/array-typed": "^0.3.0",
     "@stdlib/assert-is-string": "^0.2.2",
-    "@stdlib/ndarray-ctor": "^0.2.1",
-    "@stdlib/ndarray-slice": "^0.2.1",
-    "@stdlib/ndarray-zeros": "^0.2.1",
+    "@stdlib/ndarray-ctor": "^0.2.2",
+    "@stdlib/ndarray-slice": "^0.2.2",
+    "@stdlib/ndarray-zeros": "^0.3.0",
     "@stdlib/slice-ctor": "^0.2.2",
     "@stdlib/slice-multi": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
