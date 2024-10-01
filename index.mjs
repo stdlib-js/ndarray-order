@@ -1,4 +1,0 @@
-// Copyright (c) 2024 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import r from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-order@v0.2.2-esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-strides@v0.2.2-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ndims@v0.2.2-esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2order@v0.2.2-esm/index.mjs";import d from"https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-fmtprodmsg@v0.2.2-esm/index.mjs";var n="row-major";function o(o){var i,m;if("object"!=typeof o||null===o)throw new TypeError(d("1kZDv",o));return m=o.order,r(m)?m:(i=s(o),1===(m=e(i))||3===m?n:2===m?"column-major":0===t(o)?n:null)}export{o as default};
-//# sourceMappingURL=index.mjs.map
