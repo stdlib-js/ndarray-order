@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-order",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Return the layout order of a provided ndarray.",
   "license": "Apache-2.0",
   "author": {
@@ -38,25 +38,25 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-assert-is-order": "^0.2.2",
-    "@stdlib/ndarray-base-strides2order": "^0.2.2",
-    "@stdlib/ndarray-ndims": "^0.2.2",
+    "@stdlib/ndarray-base-strides2order": "^0.2.3",
+    "@stdlib/ndarray-ndims": "^0.2.3",
     "@stdlib/ndarray-strides": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/array-typed": "^0.3.1",
-    "@stdlib/assert-is-string": "^0.2.2",
-    "@stdlib/ndarray-ctor": "^0.2.2",
+    "@stdlib/array-typed": "^0.3.2",
+    "@stdlib/assert-is-string": "^0.2.3",
+    "@stdlib/ndarray-ctor": "^0.3.0",
     "@stdlib/ndarray-slice": "^0.2.2",
     "@stdlib/ndarray-zeros": "^0.3.0",
-    "@stdlib/slice-ctor": "^0.2.2",
-    "@stdlib/slice-multi": "^0.2.2",
+    "@stdlib/slice-ctor": "^0.2.3",
+    "@stdlib/slice-multi": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
